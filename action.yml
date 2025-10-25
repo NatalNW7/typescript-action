@@ -1,0 +1,10 @@
+name: Motivational Quotes
+description: A motivational quotes to uplift your spirits.
+
+outputs:
+  quote:
+    description: A motivational quote to inspire you.
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
