@@ -1,5 +1,5 @@
-name: Motivational Quotes
-description: A motivational quotes to uplift your spirits.
+name: Motivational Quote
+description: A motivational quote to uplift your spirits.
 
 outputs:
   quote:
