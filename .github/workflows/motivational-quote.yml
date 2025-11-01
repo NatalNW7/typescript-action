@@ -1,0 +1,19 @@
+name: Motivational Quote Action
+
+on:
+  workflow_dispatch
+
+jobs:
+  motivate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Run Motivational Quote Action
+        id: motivate
+        uses: ./
+      
+      - name: Display Motivational Quote
+        run: |
+          echo "Motivational Quote: ${{ steps.motivate.outputs.quote }}"
