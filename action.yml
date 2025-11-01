@@ -1,6 +1,8 @@
 name: Motivational Quote
 description: A motivational quote to uplift your spirits.
-
+branding:
+  icon: "book"
+  color: "yellow"
 outputs:
   quote:
     description: A motivational quote to inspire you.
