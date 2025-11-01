@@ -3,5 +3,7 @@ export async function motivationalMessage(): Promise<string> {
         .then(response => response.json());
 
     const randomIndex = Math.floor(Math.random() * messages.length);
-    return messages[randomIndex];
+    const messeageObj = messages[randomIndex];
+
+    return `"${messeageObj.phrase}" - ${messeageObj.author} -`;
 }
